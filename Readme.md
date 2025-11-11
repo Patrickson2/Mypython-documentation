@@ -61,3 +61,43 @@ name : None
 
 Looping statements use the While - the "while" loops endlessly as seen in the (loop.py)
 
+
+<!-- HOW TO READ ERRORS IN PYTHON -->
+In this example it has 3 stages being the "where" "who" "why"
+first the error message in the terminal is this
+     File "lib/a_name_error.py",
+       line 3, in <module>
+        print(hello_world)
+      NameError: name 'hello_world' is not defined
+<!-- this the output of code in the terminal -->
+
+  2.Showing "where" the error is 
+     "lib/a_name_error.py"--is the file the error occurred in.
+       line 3 --is the line of code with the error.
+            <module> --is the scope of the error.
+
+<!-- 3 COMMON ERRORS TYPES -->
+1. Syntax Errors --Syntax errors are pretty self-explanatory: they're the result of incorrect syntax. Thankfully, they're usually followed by a guess about the location of the error. For instance:
+     2 * #
+   will result in 
+   File "<stdin>", line 1
+    2 * #
+        ^
+SyntaxError: invalid syntax
+
+2. Logic Errors --
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

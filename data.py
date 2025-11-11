@@ -38,3 +38,18 @@ print("not is_ready:", not is_ready)
 print("is_ready and is_logged_in:", is_ready and is_logged_in)
 print("is_ready or is_logged_in:", is_ready or is_logged_in)
 
+my_list = [1, "two", 3.0, True]
+print(my_list)
+print(type(my_list))
+
+# add and remove
+my_list.append("new item")
+print("after append:", my_list)
+
+my_list.remove("two")
+print("after remove:", my_list)
+
+# access individual elements
+print("first item:", my_list[0])
+print("last item:", my_list[-1])
+

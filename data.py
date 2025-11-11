@@ -17,6 +17,8 @@ print(type(x), type(y))
 # EXAMPLE  CODE 2  STRINGS 
 # strings in Python are immutable or ordered --meaning their position matters, but you can’t change them directly once created.
 # they are defined by either single quotes '' or double quotes ""
+# str() this is a built in constructor function in python used to represent strings 
+
 name = "Patrickson"
 greeting = "Hello, " + name + "!"
 print(greeting)

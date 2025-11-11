@@ -1,9 +1,9 @@
 <!-- Python Datatypes -->
-<!-- Numeric -->
+  <!-- Numeric -->
 
 1,20,40
 
- <!-- String -->
+   <!-- String -->
 
 "Hello world"/ "Hello Mungai"
 
@@ -58,3 +58,6 @@ name : None
 # print("Hello sun!", end="!! ")
 
 # print("Hello sky!", end="!!!\n")
+
+Looping statements use the While - the "while" loops endlessly as seen in the (loop.py)
+

@@ -27,6 +27,18 @@ say_hi("Sunny")
 # output will be Hi there, Engineer! Hi there, Sunny!
 
 
+# difference btwn function and a value of a variable is like these two code 
+
+# func code
+def greet_programmer():
+    print("Hello, programmer!")
+
+greet_programmer()
+
+
+# value of variable
+greet_programmer = "Hello, programmer!"
+print(greet_programmer)
 
 
 

@@ -94,7 +94,7 @@ functions in python are written using methods like the key word "def" unlike in 
 we will see an example in the file func.py and how to know the difference when trying to execute a function 
 writing the name of the code you use snake case instead of camel case in js 
 
-<!-- FLAGS IN PYTESTING  -->
+<!-- FLAGS IN PYTESTING /TDD -->
 pytest has many flags, but we're just going to focus on the few that will be most helpful to you.
 
 (-x)is pytest's "exit" flag. This executes tests until one fails, then stops executing tests. This is very helpful for test-driven development, as you'll want to focus on developing to one test at a time.

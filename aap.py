@@ -29,18 +29,18 @@ b = 3
 # comparison
 # ==, <, >, !=, >=, <=
 # NB return value here should be booleaan
-print(a == b)
-print(a > b)
-print(a < b)
-print(a >= b)
-print(a <= b)
-print(a != b)
+# print(a == b)
+# print(a > b)
+# print(a < b)
+# print(a >= b)
+# print(a <= b)
+# print(a != b)
 
 # Logical operators
 # AND, OR, NOT
 
-age = 16 
-canVote = True
+# age = 16 
+# canVote = True
 
 # if age >= 18 and canVote:
 #     print("You are an Adult")
@@ -48,11 +48,27 @@ canVote = True
 #     print("You are under age")
 
 
-if age >= 18 or canVote:
-    print("You are an Adult")
-else:
-    print("You are under age")
+# if age >= 18 or canVote:
+#     print("You are an Adult")
+# else:
+#     print("You are under age")
 
 
+mungai = "Hello MUngai"
+print(mungai)
 
+def greet_programmer():
+    print("Hello, programmer!")
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+def greet_with_default(name="programmer"):
+    print(f"Hello, {name}!")
+
+def add(num1, num2):
+    return num1 + num2
+
+def halve(number):
+    return number / 2
 

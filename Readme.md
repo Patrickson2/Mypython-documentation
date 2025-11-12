@@ -94,8 +94,14 @@ functions in python are written using methods like the key word "def" unlike in 
 we will see an example in the file func.py and how to know the difference when trying to execute a function 
 writing the name of the code you use snake case instead of camel case in js 
 
+<!-- FLAGS IN PYTESTING  -->
+pytest has many flags, but we're just going to focus on the few that will be most helpful to you.
 
-
+(-x)is pytest's "exit" flag. This executes tests until one fails, then stops executing tests. This is very helpful for test-driven development, as you'll want to focus on developing to one test at a time.
+(--pdb) opens the Python debugger when a test fails. It does not open the prettier, improved ipdb, but its basic functions are very similar.
+(-s) tells pytest to show the full output for failed tests (i.e. print() statements).
+(-q) (for quiet) shortens pytest's output. Running with the -q flag will only show a single line for the summary of the testing session and details of the failures.
+(-h) will help you figure out where to place arguments for the pytest command and provide a long list of flags and configurations for use with pytest.
 
 
 

@@ -92,7 +92,7 @@ SyntaxError: invalid syntax
 <!-- FUNCTIONS IN PYTHON -->
 functions in python are written using methods like the key word "def" unlike in js where when writing out functions you use the key word "function"
 we will see an example in the file func.py and how to know the difference when trying to execute a function 
-
+writing the name of the code you use snake case instead of camel case in js 
 
 
 

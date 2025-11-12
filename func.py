@@ -14,3 +14,23 @@ greet_programmer()
             #  TypeError: 'str' object is not callable
 
 # so to go about this i commented on line 6 to remove the overide of the code.
+
+# this is a default argument  
+def say_hi(name="Engineer"):
+    # the "f"(formatted string)It lets you insert variables directly inside a string using {} then Python replaces the {} part with the actual value of the variable.
+    # inshort nisipoweka the "F" the whole text in the "" itakuwa passed down kwa terminal.
+    print(f"Hi there, {name}!")
+
+say_hi()
+
+say_hi("Sunny")
+# output will be Hi there, Engineer! Hi there, Sunny!
+
+
+
+
+
+
+
+
+

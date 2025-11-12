@@ -1,5 +1,5 @@
 # my function display
-
+# the use of the def word shows that the rest of the code is being a function
 def greet_programmer():
     print("Hello, programmer!")
 

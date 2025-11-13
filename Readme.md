@@ -172,3 +172,19 @@ def halve(number: float) -> float:
     return number / 2
 
 print(halve(10))  # 5.0
+
+```
+## OPERATORS 
+ There are two types of conditional statements the "Comparison OPerators" & "LOGICAL OPERATORS"
+ <!-- COMPARISON OPERATORS -->
+ 1. Comparison operators 
+You use these to compare values. They always return a boolean (True or False).
+
+| Operator | Meaning          | Example           |
+| -------- | ---------------- | ----------------- |
+| `==`     | equal to         | `5 == 5` → True   |
+| `!=`     | not equal        | `5 != 3` → True   |
+| `>`      | greater than     | `7 > 4` → True    |
+| `<`      | less than        | `2 < 10` → True   |
+| `>=`     | greater or equal | `10 >= 10` → True |
+| `<=`     | less or equal    | `8 <= 8` → True   |

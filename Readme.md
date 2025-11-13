@@ -103,8 +103,25 @@ pytest has many flags, but we're just going to focus on the few that will be mos
 (-q) (for quiet) shortens pytest's output. Running with the -q flag will only show a single line for the summary of the testing session and details of the failures.
 (-h) will help you figure out where to place arguments for the pytest command and provide a long list of flags and configurations for use with pytest.
 
+<!-- SCOPE -->
+two diff scopes are "Global scope" & "Local Scope"
+for more example on the diff check out on var.py
+       <!-- Glocal scope -->
+         these are variables created outside of a function and are made available to all functions in your module eg.
 
+         message = "Hello from outside"
 
+              def greet():
+               print(message)  
 
+           greet()
+           print(message) 
 
+       <!-- Local scope -->
+        these are variables created inside the fuction eg.
+
+           def greet():
+                message = "Hello from inside the function"
+                print(message)
+            greet()
 

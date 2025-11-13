@@ -40,7 +40,7 @@ change_yourself()
 print(change_the_world)
 # print(change_yourself)
 
-# on this code below shows why you cannot print change yourself again on line 41 because python will like ignore it and produce it as a memory address
+# on this code below shows why you cannot print change yourself again on line 41 because python will like ignore it and produce a function object 
 def say_hi():
     print("Hi there!")
 
@@ -53,3 +53,15 @@ change_the_world = "change yourself"
 def change():
     print(change_the_world)
 change()
+
+# this produces a function object in the terminal
+def say_hi():
+    print("Hi there!")
+# when chamging this then try to assine the say_hi() inside print will output but still bring back a none. 
+# print(say_hi) let me cooment on this so as to check the ouput.
+print(say_hi())
+
+def say_hi():
+    return "Hi there!"
+
+print(say_hi())

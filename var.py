@@ -68,3 +68,10 @@ def say_hi():
 print(say_hi()) 
 
 
+# now here i am trying to tie everything together to get a clear understanging on what i have learnt
+def halve(number: float) -> float:
+    return number / 2
+
+result = halve(10)
+print(result)
+

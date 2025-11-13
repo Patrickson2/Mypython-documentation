@@ -125,3 +125,50 @@ for more example on the diff check out on var.py
                 print(message)
             greet()
 
+SO IN SHORT THIS IS ALL ABOUT WHAT I HAVE LEARNT 
+
+# Python Basics — Data Types and Functions
+
+This project demonstrates Python data types and functions for backend learning.
+
+## Data Types Covered
+- `int` → whole numbers
+- `float` → decimal numbers
+- `str` → text
+- `bool` → True/False
+- `list`, `tuple`, `dict`, `set`
+
+## Functions
+- Functions are reusable blocks of code.
+- `return` sends a value back.
+- Default values make functions flexible.
+- Type hints show expected argument and return types.
+
+## Examples
+
+```python
+# Integers and floats
+x = 10
+y = 3.5
+print(x + y)  # 13.5
+
+# Strings
+name = "Patrickson"
+print(f"Hello, {name}!")
+
+# Booleans
+is_ready = True
+print(not is_ready)  # False
+
+# Function with default value and type hints
+def greet(name: str = "programmer") -> str:
+    return f"Hello, {name}!"
+
+print(greet())  # Hello, programmer!
+print(greet("Patrickson"))  # Hello, Patrickson!
+
+# Function returning half a number
+def halve(number: float) -> float:
+    return number / 2
+
+print(halve(10))  # 5.0

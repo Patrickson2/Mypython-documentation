@@ -188,3 +188,12 @@ You use these to compare values. They always return a boolean (True or False).
 | `<`      | less than        | `2 < 10` → True   |
 | `>=`     | greater or equal | `10 >= 10` → True |
 | `<=`     | less or equal    | `8 <= 8` → True   |
+<!-- LOGICAL OPERATORS -->
+2. Logical operators
+These combine boolean values.
+
+| Operator | Meaning           | Example                  |
+| -------- | ----------------- | ------------------------ |
+| `and`    | both must be True | `True and False` → False |
+| `or`     | at least one True | `True or False` → True   |
+| `not`    | flips boolean     | `not True` → False       |

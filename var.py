@@ -61,7 +61,10 @@ def say_hi():
 # print(say_hi) let me cooment on this so as to check the ouput.
 print(say_hi())
 
+# USING OF THE "RETURN" WORD TO GET AWAY WITH THE NONE THAT IS BEING EXCUTED IN TERMINAL
 def say_hi():
     return "Hi there!"
 
-print(say_hi())
+print(say_hi()) 
+
+

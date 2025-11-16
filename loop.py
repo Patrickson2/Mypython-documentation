@@ -62,5 +62,14 @@ for Fruit in Fruit:
         print("Healthy")
         break 
 
+# ininite loops are the ones that never end untill you introduce a special work "BREAK" that stops the ininite like example above 
+
+# | Concept              | Example                 | Behaviour                    |
+# | -------------------- | ----------------------- | ---------------------------- |
+# | Basic while          | `while x < 5:`          | Runs while condition is true |
+# | Updating variable    | `x += 1`                | Prevents infinite loop       |
+# | User-controlled loop | `while name != "stop":` | Stops when user types stop   |
+# | Infinite loop        | Condition never changes | Never ends                   |
+# | break                | `break` inside loop     | Stops the loop early         |
 
 

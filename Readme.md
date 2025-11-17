@@ -301,14 +301,27 @@ You're correct on all points:
 
 
 
+<!-- OBJECT ORIENTED PROGRAMMING IN PYTHON -->
+So oop is built using these syntaxes 
+ [Classes and objects, Attributes (properties of objects), Methods (functions inside classes), Constructors (__init__),
+    Encapsulation / access modifiers, Inheritance, Polymorphism, Practical examples]
+
+example codes find them on objectpp.py file
 
 
 
 
-
-
-
-
+class student:
+    def __init__(self , marks, grade):
+        self.marks = marks
+        self.grade = grade
+    def __str__(self):
+        return f'this {self.marks} is the marks and this {self.grade}'
+so = student('79' , 'grade')
+print(so)
+student {
+    
+}
 
 
 

@@ -32,3 +32,17 @@ class student:
         return f'this {self.marks} is the marks and this {self.grade}'
 so = student('79' , 'grade')
 print(so)
+
+
+
+
+# the dot notation example 
+class Dog:
+    def bark(self):
+        print("Woof!")
+
+fido = Dog()
+# the .bark is for executing the method of the dog to bark 
+fido.bark()
+# output to be 
+# Woof!

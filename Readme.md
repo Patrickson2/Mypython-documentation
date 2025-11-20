@@ -324,6 +324,60 @@ student {
 }
 
 
+<!-- AN EXPLANATION OF HOW TO USE SUPER() AND ALSO AN EXAMPLE CODE  -->
+🧒 Imagine this:
+
+You have a student in school.
+
+A Student is also a User (a regular person with a login).
+
+The User class already has a log_in() function that knows how to log someone in.
+
+But the Student class wants to do extra things when a student logs in — like mark them as “in class.”
+
+🤔 So what does super() do?
+👉 super() basically means:
+
+“Hey, run the parent’s version of this function first.”
+
+So when you write:
+<!-- example code -->
+def log_in(self):
+    super().log_in()
+    self.in_class = True
+
+
+This means:
+
+super().log_in() → “Do everything the User class normally does when someone logs in.”
+
+self.in_class = True → THEN do the extra student-only thing.
+
+🧒 Simple analogy:
+
+Imagine you’re at school.
+When you enter the building:
+
+Everyone has to check in at the front desk.
+(This is the parent class: User.log_in())
+
+But students also have to go to their classroom after checking in.
+(This is the child class: Student.log_in())
+
+super() is like saying:
+
+➡️ “Let me do what everyone does first… then I’ll do the extra student part.”
+
+📌 Why do we need super()?
+
+Because without it:
+
+The User's login stuff wouldn’t happen.
+
+Only the student-specific part would happen.
+
+You might skip important steps like authentication.
+
 
 
 

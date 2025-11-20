@@ -208,3 +208,51 @@ It lets each object store and access its own data.
 It must be the first argument in class methods (Python adds it automatically).
 
 
+10. INSTANCE VS CLASS ATTRIBUTES
+✔ Instance Attribute
+Belongs to one person only.
+
+python
+Copy code
+self.name
+self.age
+Each human has their own name and age.
+
+✔ Class Attribute
+Something all humans share.
+
+python
+Copy code
+species = "Homo Sapiens"
+All humans share the same species.
+
+Your Example Code (Explained Simply)
+python
+Copy code
+class Human:
+    def __init__(self, name, age="40"):
+        self.name = name
+        self.age = age
+
+h1 = Human("Kamau", 20)
+h2 = Human("kamara")
+
+print(h1.name, h1.age)   
+print(h2.name, h2.age)
+Line-by-line (10-year-old style):
+We create a class Human.
+
+When someone is created, they get a name and an age.
+
+If no age is given, we use 40 as the default.
+
+h1 is Kamau who is 20.
+
+h2 is Kamara who didn’t give an age, so he becomes 40.
+
+✔ Output
+nginx
+Copy code
+Kamau 20
+kamara 40
+Correct.

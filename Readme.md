@@ -378,8 +378,133 @@ Only the student-specific part would happen.
 
 You might skip important steps like authentication.
 
+<!-- Building Class Methods and Using Class Attributes -->
+1. An instance attribute is responsible for holding information regarding an instance. It is a variable that is available in scope for all instance methods in the class.
 
+2. A class attribute is accessible to the entire class — it has class scope. A class method is a method that is called on the class itself, not on the   instances of that class.
+  <!-- Understanding Class Attributes & Class Methods -->
+  Imagine you have a factory that makes things.
+In Python, that factory is called a class, and the things it makes are called instances.
 
+🧱 What Are Attributes?
+Attributes = information stored inside an object.
+
+Example:
+If you make an Album object, it might have:
+
+a release date
+
+a genre
+
+an artist
+
+This info belongs to each individual album.
+
+python
+Copy code
+class Album:
+    def __init__(self, date):
+        self.release_date = date
+Here, self.release_date is instance attribute ➜ because every album has its own release date.
+
+🏭 But Guess What? A Class Is Also an Object!
+Just like a single album is an object…
+The Album class itself is ALSO an object.
+That means the class can have:
+
+its own attributes (class attributes)
+
+its own methods (class methods)
+
+🔢 Why Use Class Attributes?
+Imagine you want to count how many albums you have created.
+
+Is it each album’s job to count all albums?
+Nope — that doesn’t make sense.
+
+It’s the Album factory’s job to keep track.
+
+So we put that information on the class, not the individual album.
+
+python
+Copy code
+class Album:
+    album_count = 0
+This is a class attribute.
+
+You can access it like this:
+
+python
+Copy code
+Album.album_count   # works
+album1.album_count  # also works but still refers to the class
+⚙️ Making the Counter Go Up Automatically
+Every time we create a new album, the album_count should increase.
+
+Where do albums get created?
+Inside the __init__ method.
+
+So we add:
+
+python
+Copy code
+Album.album_count += 1
+This way, every time an album is made, the counter goes up.
+
+🧠 Class Methods: What Are They?
+A class method is a function that belongs to the class itself, not to a single album.
+
+We create one like this:
+
+python
+Copy code
+@classmethod
+def something(cls):
+    ...
+cls means “the whole class,” like Album itself.
+
+Example: a class method to increase the album count:
+
+python
+Copy code
+@classmethod
+def increase_album_count(cls, increment=1):
+    cls.album_count += increment
+Now the class can update its own counter.
+
+🧊 Class Constants
+A class constant is just data inside the class that is not supposed to change, like a list of allowed music genres.
+
+We write constants in ALL CAPS so other programmers know not to touch them.
+
+python
+Copy code
+class Album:
+    GENRES = ["Hip-Hop", "Pop", "Jazz"]
+Even though Python won’t stop someone from changing it, the ALL CAPS name is a “don’t change me” sign.
+
+You can still access it like:
+
+python
+Copy code
+Album.GENRES
+🧩 Putting It All Together
+With instance attributes, class attributes, and class methods, a class becomes smarter.
+
+Instance attributes = info about one object
+
+Class attributes = info shared by every object the class makes
+
+Class methods = actions the class itself can do
+
+Class constants = info that shouldn’t change
+
+🏁 Final Summary (Super Simple)
+Thing	What It Is	Example
+Instance attribute	belongs to one object	self.release_date
+Class attribute	belongs to the class	album_count = 0
+Class method	a function for the class	@classmethod
+Class constant	class data that shouldn’t change	GENRES = [...]
 
 
 

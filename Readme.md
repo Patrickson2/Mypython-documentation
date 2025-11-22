@@ -61,40 +61,42 @@ name : None
 
 Looping statements use the While - the "while" loops endlessly as seen in the (loop.py)
 
-
 <!-- HOW TO READ ERRORS IN PYTHON -->
+
 In this example it has 3 stages being the "where" "who" "why"
 first the error message in the terminal is this
-     File "lib/a_name_error.py",
-       line 3, in <module>
-        print(hello_world)
-      NameError: name 'hello_world' is not defined
+File "lib/a_name_error.py",
+line 3, in <module>
+print(hello_world)
+NameError: name 'hello_world' is not defined
+
 <!-- this the output of code in the terminal -->
 
-  2.Showing "where" the error is 
-     "lib/a_name_error.py"--is the file the error occurred in.
-       line 3 --is the line of code with the error.
-            <module> --is the scope of the error.
+2.Showing "where" the error is
+"lib/a_name_error.py"--is the file the error occurred in.
+line 3 --is the line of code with the error.
+<module> --is the scope of the error.
 
 <!-- 3 COMMON ERRORS TYPES -->
+
 1. Syntax Errors --Syntax errors are pretty self-explanatory: they're the result of incorrect syntax. Thankfully, they're usually followed by a guess about the location of the error. For instance:
-     2 * #
-   will result in 
+   2 _ #
+   will result in
    File "<stdin>", line 1
-    2 * #
-        ^
-SyntaxError: invalid syntax
+   2 _ #
+   ^
+   SyntaxError: invalid syntax
 
 2. Logic Errors --
 
-
-
 <!-- FUNCTIONS IN PYTHON -->
+
 functions in python are written using methods like the key word "def" unlike in js where when writing out functions you use the key word "function"
-we will see an example in the file func.py and how to know the difference when trying to execute a function 
-writing the name of the code you use snake case instead of camel case in js 
+we will see an example in the file func.py and how to know the difference when trying to execute a function
+writing the name of the code you use snake case instead of camel case in js
 
 <!-- FLAGS IN PYTESTING /TDD -->
+
 pytest has many flags, but we're just going to focus on the few that will be most helpful to you.
 
 (-x)is pytest's "exit" flag. This executes tests until one fails, then stops executing tests. This is very helpful for test-driven development, as you'll want to focus on developing to one test at a time.
@@ -104,18 +106,19 @@ pytest has many flags, but we're just going to focus on the few that will be mos
 (-h) will help you figure out where to place arguments for the pytest command and provide a long list of flags and configurations for use with pytest.
 
 <!-- SCOPE -->
+
 two diff scopes are "Global scope" & "Local Scope"
 for more example on the diff check out on var.py
-       <!-- Glocal scope -->
-         these are variables created outside of a function and are made available to all functions in your module eg.
+<!-- Glocal scope -->
+these are variables created outside of a function and are made available to all functions in your module eg.
 
          message = "Hello from outside"
 
               def greet():
-               print(message)  
+               print(message)
 
            greet()
-           print(message) 
+           print(message)
 
        <!-- Local scope -->
         these are variables created inside the fuction eg.
@@ -125,13 +128,14 @@ for more example on the diff check out on var.py
                 print(message)
             greet()
 
-SO IN SHORT THIS IS ALL ABOUT WHAT I HAVE LEARNT 
+SO IN SHORT THIS IS ALL ABOUT WHAT I HAVE LEARNT
 
 # Python Basics — Data Types and Functions
 
 This project demonstrates Python data types and functions for backend learning.
 
 ## Data Types Covered
+
 - `int` → whole numbers
 - `float` → decimal numbers
 - `str` → text
@@ -139,6 +143,7 @@ This project demonstrates Python data types and functions for backend learning.
 - `list`, `tuple`, `dict`, `set`
 
 ## Functions
+
 - Functions are reusable blocks of code.
 - `return` sends a value back.
 - Default values make functions flexible.
@@ -174,11 +179,15 @@ def halve(number: float) -> float:
 print(halve(10))  # 5.0
 
 ```
-## OPERATORS 
- There are two types of conditional statements the "Comparison OPerators" & "LOGICAL OPERATORS"
+
+## OPERATORS
+
+There are two types of conditional statements the "Comparison OPerators" & "LOGICAL OPERATORS"
+
  <!-- COMPARISON OPERATORS -->
- 1. Comparison operators 
-You use these to compare values. They always return a boolean (True or False).
+
+1.  Comparison operators
+    You use these to compare values. They always return a boolean (True or False).
 
 | Operator | Meaning          | Example           |
 | -------- | ---------------- | ----------------- |
@@ -188,9 +197,11 @@ You use these to compare values. They always return a boolean (True or False).
 | `<`      | less than        | `2 < 10` → True   |
 | `>=`     | greater or equal | `10 >= 10` → True |
 | `<=`     | less or equal    | `8 <= 8` → True   |
+
 <!-- LOGICAL OPERATORS -->
+
 2. Logical operators
-These combine boolean values.
+   These combine boolean values.
 
 | Operator | Meaning           | Example                  |
 | -------- | ----------------- | ------------------------ |
@@ -198,29 +209,34 @@ These combine boolean values.
 | `or`     | at least one True | `True or False` → True   |
 | `not`    | flips boolean     | `not True` → False       |
 
-
 <!-- LOOPS IN PYTHON  -->
 <!-- Python Loops -->
+
 This guide covers Python loops, how they work, and how they can be applied in backend logic.
 
 <!-- What loops do -->
+
 Loops repeat code so you don’t have to write it multiple times. You can use them to go through numbers, lists, or filter data in backend systems.
+
 <!-- EXAMPLES -->
+
 1. for loop -Use a for loop when you know how many times you want the code to run.
-     for more example check on file name "LOOP.PY"
+   for more example check on file name "LOOP.PY"
 
 2. while loop
    <!-- EXMPLE IN A REAL WORLD PROJECT -->
 
-I went on and gave this prompt to CHATgpt for mor clarity 
-     so meaning that when lets say i am trying to build an application for a backend like movie site and then before one logs in and they are being prompted to choose their variety of movies ie action,thriller,romance horror they they choose thriller and romance, so this means that their choise would be looped through the backend of the system so to check their variety choice then they get the output of movies in their dashboard so they can choose which they will watch on that day 
-or the loop can act like for search bar when one searches a movie it brings out the diff movies starting with that title in the server or database is it true to the example i am trying to give 
+I went on and gave this prompt to CHATgpt for mor clarity
+so meaning that when lets say i am trying to build an application for a backend like movie site and then before one logs in and they are being prompted to choose their variety of movies ie action,thriller,romance horror they they choose thriller and romance, so this means that their choise would be looped through the backend of the system so to check their variety choice then they get the output of movies in their dashboard so they can choose which they will watch on that day
+or the loop can act like for search bar when one searches a movie it brings out the diff movies starting with that title in the server or database is it true to the example i am trying to give
 i dont know if i have made any sense hahahaha
 
 <!-- THis is the output/ responce i got back  -->
+
 How loops fit into your example
+
 1. User chooses categories (e.g., Thriller and Romance)
-In the backend you’d have something like:
+   In the backend you’d have something like:
 
 A list of movies stored in a database
 
@@ -233,9 +249,9 @@ Example (simple version):
 python
 Copy code
 movies = [
-    {"title": "Movie A", "category": "thriller"},
-    {"title": "Movie B", "category": "romance"},
-    {"title": "Movie C", "category": "action"},
+{"title": "Movie A", "category": "thriller"},
+{"title": "Movie B", "category": "romance"},
+{"title": "Movie C", "category": "action"},
 ]
 
 chosen = ["thriller", "romance"]
@@ -243,12 +259,12 @@ chosen = ["thriller", "romance"]
 result = []
 
 for m in movies:
-    if m["category"] in chosen:
-        result.append(m)
+if m["category"] in chosen:
+result.append(m)
 This loop filters movies based on user preference.
 
 2. Search bar example
-Your search bar idea is also correct.
+   Your search bar idea is also correct.
 
 If a user types "sp", a loop checks all movies in the database whose title starts with "sp".
 
@@ -260,8 +276,8 @@ search = "sp"
 matches = []
 
 for movie in movies:
-    if movie["title"].lower().startswith(search):
-        matches.append(movie)
+if movie["title"].lower().startswith(search):
+matches.append(movie)
 Result might be:
 
 Spider-Man
@@ -271,7 +287,7 @@ Spawn
 Space Jam
 
 3. Loops in real backend apps
-In a real API or backend:
+   In a real API or backend:
 
 You don’t loop in Python manually every time.
 
@@ -299,32 +315,28 @@ You're correct on all points:
 
 ✔️ Loops help structure the data sent to the dashboard
 
-
-
 <!-- OBJECT ORIENTED PROGRAMMING IN PYTHON -->
-So oop is built using these syntaxes 
- [Classes and objects, Attributes (properties of objects), Methods (functions inside classes), Constructors (__init__),
-    Encapsulation / access modifiers, Inheritance, Polymorphism, Practical examples]
+
+So oop is built using these syntaxes
+[Classes and objects, Attributes (properties of objects), Methods (functions inside classes), Constructors (__init__),
+Encapsulation / access modifiers, Inheritance, Polymorphism, Practical examples]
 
 example codes find them on objectpp.py file
 
-
-
-
 class student:
-    def __init__(self , marks, grade):
-        self.marks = marks
-        self.grade = grade
-    def __str__(self):
-        return f'this {self.marks} is the marks and this {self.grade}'
+def **init**(self , marks, grade):
+self.marks = marks
+self.grade = grade
+def **str**(self):
+return f'this {self.marks} is the marks and this {self.grade}'
 so = student('79' , 'grade')
 print(so)
 student {
-    
+
 }
 
-
 <!-- AN EXPLANATION OF HOW TO USE SUPER() AND ALSO AN EXAMPLE CODE  -->
+
 🧒 Imagine this:
 
 You have a student in school.
@@ -341,11 +353,12 @@ But the Student class wants to do extra things when a student logs in — like m
 “Hey, run the parent’s version of this function first.”
 
 So when you write:
-<!-- example code -->
-def log_in(self):
-    super().log_in()
-    self.in_class = True
 
+<!-- example code -->
+
+def log_in(self):
+super().log_in()
+self.in_class = True
 
 This means:
 
@@ -379,12 +392,13 @@ Only the student-specific part would happen.
 You might skip important steps like authentication.
 
 <!-- Building Class Methods and Using Class Attributes -->
+
 1. An instance attribute is responsible for holding information regarding an instance. It is a variable that is available in scope for all instance methods in the class.
 
-2. A class attribute is accessible to the entire class — it has class scope. A class method is a method that is called on the class itself, not on the   instances of that class.
-  <!-- Understanding Class Attributes & Class Methods -->
-  Imagine you have a factory that makes things.
-In Python, that factory is called a class, and the things it makes are called instances.
+2. A class attribute is accessible to the entire class — it has class scope. A class method is a method that is called on the class itself, not on the instances of that class.
+     <!-- Understanding Class Attributes & Class Methods -->
+   Imagine you have a factory that makes things.
+   In Python, that factory is called a class, and the things it makes are called instances.
 
 🧱 What Are Attributes?
 Attributes = information stored inside an object.
@@ -403,8 +417,8 @@ This info belongs to each individual album.
 python
 Copy code
 class Album:
-    def __init__(self, date):
-        self.release_date = date
+def **init**(self, date):
+self.release_date = date
 Here, self.release_date is instance attribute ➜ because every album has its own release date.
 
 🏭 But Guess What? A Class Is Also an Object!
@@ -429,20 +443,20 @@ So we put that information on the class, not the individual album.
 python
 Copy code
 class Album:
-    album_count = 0
+album_count = 0
 This is a class attribute.
 
 You can access it like this:
 
 python
 Copy code
-Album.album_count   # works
-album1.album_count  # also works but still refers to the class
+Album.album_count # works
+album1.album_count # also works but still refers to the class
 ⚙️ Making the Counter Go Up Automatically
 Every time we create a new album, the album_count should increase.
 
 Where do albums get created?
-Inside the __init__ method.
+Inside the **init** method.
 
 So we add:
 
@@ -460,7 +474,7 @@ python
 Copy code
 @classmethod
 def something(cls):
-    ...
+...
 cls means “the whole class,” like Album itself.
 
 Example: a class method to increase the album count:
@@ -469,7 +483,7 @@ python
 Copy code
 @classmethod
 def increase_album_count(cls, increment=1):
-    cls.album_count += increment
+cls.album_count += increment
 Now the class can update its own counter.
 
 🧊 Class Constants
@@ -480,7 +494,7 @@ We write constants in ALL CAPS so other programmers know not to touch them.
 python
 Copy code
 class Album:
-    GENRES = ["Hip-Hop", "Pop", "Jazz"]
+GENRES = ["Hip-Hop", "Pop", "Jazz"]
 Even though Python won’t stop someone from changing it, the ALL CAPS name is a “don’t change me” sign.
 
 You can still access it like:
@@ -500,13 +514,14 @@ Class methods = actions the class itself can do
 Class constants = info that shouldn’t change
 
 🏁 Final Summary (Super Simple)
-Thing	What It Is	Example
-Instance attribute	belongs to one object	self.release_date
-Class attribute	belongs to the class	album_count = 0
-Class method	a function for the class	@classmethod
-Class constant	class data that shouldn’t change	GENRES = [...]
+Thing What It Is Example
+Instance attribute belongs to one object self.release_date
+Class attribute belongs to the class album_count = 0
+Class method a function for the class @classmethod
+Class constant class data that shouldn’t change GENRES = [...]
 
 <!-- WHEN WANTING TO CREATE A PYTHON FILE FOLLOW THESE STEPS  -->
+
 Environment Setup (Code-Along)
 GitHub RepoCreate New Issue
 Learning Goals
@@ -532,13 +547,14 @@ pyenv install instructionsLinks to an external site.
 
 Run the following command to confirm pyenv was installed for version 3.8.13:
 
- pyenv versions
-  system
-* 3.8.13 (set by /Users/username/.pyenv/version)
-  ...
-Confirm your current global Python version is 3.8.13:
+pyenv versions
+system
 
- python3 --version
+- 3.8.13 (set by /Users/username/.pyenv/version)
+  ...
+  Confirm your current global Python version is 3.8.13:
+
+python3 --version
 Python 3.8.13
 Take a look at the file program.py, which simply prints the current Python version:
 
@@ -547,47 +563,47 @@ print("Python version")
 print(sys.version)
 You can also run this program to confirm your Python version is 3.8.13:
 
- python program.py
+python program.py
 Python version
 3.8.13
 We can see the different versions of Python available to install using the following command
 
- pyenv install -l
+pyenv install -l
 Available versions:
-  2.1.3
-  2.2.3
-  2.3.7
-  ...
-  ...
+2.1.3
+2.2.3
+2.3.7
+...
+...
 Lets install a new version of Python (3.11). We can do this using the following command
 
- pyenv install 3.11
+pyenv install 3.11
 Installing a new version of Python does not however change the current global version. We can confirm this by checking the Python version:
 
- python3 --version
+python3 --version
 Python 3.8.13
 Use pyenv to set the global Python version to the new version 3.11:
 
- pyenv global 3.11
+pyenv global 3.11
 Confirm the current global Python version (full version 3.11.x may differ):
 
- python3 --version
+python3 --version
 Python 3.11.4
 Now if we run a Python program, we'll see it is executed using Python version 3.11.x. For example, let's run program.py:
 
- python program.py
+python program.py
 Python version
 3.11.4
 Let's set the global Python version back to 3.8.13:
 
- pyenv global 3.8.13
+pyenv global 3.8.13
 Confirm the global Python version:
 
- python3 --version
+python3 --version
 Python 3.8.13
 Confirm our Python program program.py runs in this version:
 
- python program.py
+python program.py
 Python version
 3.8.13
 Pipenv
@@ -625,13 +641,13 @@ The Pipfile.lock describes all the dependencies our dependencies rely on. The lo
 
 We can now install a library into the virtual environment. Lets use the requests library as an example
 
- pipenv install requests
+pipenv install requests
 if we want to install a specific version of the requests library we can pin the version in the command
 
- pipenv install requests==2.28.1
+pipenv install requests==2.28.1
 Pipenv has created a virtual environment for our project. We can see the location of this virtual environment by using the command (your location will differ):
 
- pipenv --venv
+pipenv --venv
 Successfully created virtual environment!
 Virtualenv location: /Users/username/python-p3-environment-setup/.venv
 Pipenv allows us to install dev dependencies. We can do so by adding the --dev argument.
@@ -643,11 +659,11 @@ Dev dependencies are modules which are not needed in production but they help us
 
 The command pipenv --version 3.11 created the Pipfile and Pipfile.lock files that define a virtual environment. However, the environment is not yet activated, and the current shell is still running Python 3.8.13. We can confirm this by:
 
- python3 --version
+python3 --version
 Python 3.8.13
 We can also run program.py to print the current Python version:
 
- python program.py
+python program.py
 Python version
 3.8.13
 How do we get into our virtual environment to run programs with version 3.11 and the various imported modules?
@@ -657,41 +673,42 @@ Use the following command to activate the virtual environment and run commands i
 pipenv shell
 Now we are in the virtual environment running Python 3.11, and have access to the dependencies we defined in the Pipfile. If we run the following commands in the virtual environment we will see that we can import the requests module we installed previously using pipenv install requests.
 
- python
->> import requests
->> exit()
-If we run our Python program program.py in the virtual environment, we should see we are running 3.11.x:
+python
 
- python program.py
+> > import requests
+> > exit()
+> > If we run our Python program program.py in the virtual environment, we should see we are running 3.11.x:
+
+python program.py
 Python version
 3.11.4
 If you ever need to remove a virtual environment you can use the pipenv --rm command.
 
- pipenv --rm
+pipenv --rm
 Removing virtualenv (/Users/username/python-p3-environment-setup/.venv)...
 This should return us back to our global Python version of 3.8.13, which we can confirm in a few different ways:
 
- python3 --version
+python3 --version
 Python 3.8.13
- python program.py
+python program.py
 Python version
 3.8.13
 If you type pipenv shell (but don't!), you are activating the virtual environment in a new shell and every command you type is executed within that environment. Sometimes you might want to run a single command in a virtual environment. We can do with by running pipenv install then pipenv run <command> to execute a particular command within the virtual environment.
 
 Run pipenv install again, but don't activate the environment in a new shell. You'll see the global version of Python for the current shell is still 3.8.13:
 
- pipenv install
- python program.py
+pipenv install
+python program.py
 Python version
 3.8.13
 We can run program.py in the virtual environment defined in Pipfile (i.e. Python 3.11 and installed modules) as shown:
 
- pipenv run python program.py
+pipenv run python program.py
 Python version
 3.11.4
 Since we did not activate the virtual environment in a new shell, the environment is no longer active after the program completes, and the current shell is still using 3.8.13:
 
- python program.py
+python program.py
 Python version
 3.8.13
 Since we've set the python version for this program to 3.11, the program will run using python 3.11, even though the global version is 3.8.13. As long as we have a specific python version installed on our computer, we can use it locally in specific programs without having to reset our global python version.
@@ -699,14 +716,57 @@ Since we've set the python version for this program to 3.11, the program will ru
 Conclusion
 Confirm you are no longer in a virtual environment (you might see an error message if you already removed the virtual environment).
 
- pipenv --rm
+pipenv --rm
 Confirm you are back using global Python version 3.8.13:
 
- python3 --version
+python3 --version
 Python 3.8.13
 Virtual environments allow us to have a deterministic and predictable runtime for our Python projects. We can define specific versions for Python and the dependencies we need. We can easily add new virtual environments for multiple projects we have on our machine.
 
+<!-- NOW I WANT TO KNOW HOW TO USE THE PIP&PIPE -->
 
+PyPi and Pip
 
+Learning Goals
+Installing packages using pip.
+Key Vocab
+Module: a file containing Python definitions and statements. A module's functions, classes, and global variables can be accessed by other modules.
+Package: a collection of modules that can be accessed as a group using the package name.
+import: the Python keyword used to access data from other packages and modules inside of the current module.
+PyPI: the Python Package Index. A repository of Python packages that can be downloaded and made available to your application.
+pip: the command line tool used to download packages from PyPI. pip is installed on your computer automatically when you download Python.
+Virtual Environment: a collection of modules, packages, and scripts that can be activated or deactivated at any time.
+Pipenv: a virtual environment tool that uses pip to manage the modules, packages, and scripts that you intend to use in your application.
+Introduction
+Package Installer for Python (Pip) is the default package manager for python and is used to install and manage software packages. It uses an online repository called Python Package Index (PyPi).
 
+We can search PyPi for libraries using the search bar on the site.
 
+Installing Packages using Pip
+We can use the Pip command to install python packages from the Python Package Index (PyPi). Lets practice this using a package called requests. Requests is a HTTP library for the Python programming language.
+
+pip install requests
+Now we have access to the requests module. It can be imported in our python programs.
+
+$ python
+
+> > > import requests
+> > > To install a specific version of the module we can use pip install
+
+pip install requests==2.22.0
+Requirements files are files containing a list of modules to be installed using pip install.
+
+pip install -r requirements.txt
+Constraints files are requirements files that only control which version of a requirement is installed, not whether it is installed or not.
+
+pip install -c constraints.txt
+Example of a requirements.txt or constraints.txt file.
+
+requests==2.28.1
+uvicorn==0.18.2
+fastapi==0.79.0
+To uninstall a package
+
+pip uninstall requests
+Conclusion
+Pip can be used to install packages from the Python Package Index. It gives us access to many libraries to help us develop.

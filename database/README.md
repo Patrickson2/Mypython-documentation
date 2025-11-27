@@ -1,0 +1,1 @@
+create a database and call it students, and in it make a insert data into rows and colums with atleast 5 students 
